@@ -16,6 +16,12 @@ class MainActivity : AppCompatActivity() {
 
        btnCalc.setOnClickListener {
 
+           val peso: Float = edtPeso.text.toString().toFloat()
+           val altura: Float = edtAltura.text.toString().toFloat()
+
+           val alturaQ2 = altura * altura
+           val result = peso / alturaQ2
+
        }
     }
 }
